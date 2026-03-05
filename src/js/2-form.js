@@ -10,8 +10,8 @@ const form = document.querySelector('.feedback-form');
 const formFieldEmail = form.querySelector('[name="email"]')
 const formFieldMessage = form.querySelector('[name="message"]')
 
-formFieldEmail.value = storageData?.email || ""
-formFieldMessage.value = storageData?.message || ""
+formFieldEmail.value = formData.email
+formFieldMessage.value = formData.message
 
 
 form.addEventListener('input', event => {
