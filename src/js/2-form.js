@@ -1,8 +1,8 @@
 const storageData = JSON.parse(localStorage.getItem('feedback-form-state'));
 
 let formData = {
-  email: "", 
-  message: "",
+  email: storageData?.email || "", 
+  message: storageData?.message || "",
 }
 
 const form = document.querySelector('.feedback-form');
